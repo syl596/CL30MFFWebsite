@@ -2,7 +2,7 @@
 
 The project can be accessed [here](https://syl596.github.io/CL30MMFWebsite/).
 
-Note: Images may take a bit of time to load-they will appear collapsed in the carousel when they are still loading.
+Note: Images may take a bit of time to load—they will appear collapsed in the carousel when they are still loading.
 
 ## Project Description:
 
