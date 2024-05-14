@@ -1,0 +1,225 @@
+
+@font-face {
+  font-family: gothamBook;
+  src: url(gothamBook.otf);
+}
+
+body {
+  background-image: url("torchPattern.png");
+  font-family: gothamBook;
+  text-align: center;
+  margin:0;
+}
+
+.pattern-container{
+	float:bottom;
+    background-image: url("torchPatternP.png");
+    background-repeat: repeat-x;
+    width:100%;
+}
+
+
+.patternBlock {
+	float:left;
+	width:100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #57068c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+li {
+  float: right;
+  font-size: 40px;
+
+}
+
+li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #cdb5dd;
+}
+
+.active {
+  background-color: #1a022a;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+}
+
+.row .column {
+  flex: 24%;
+  padding: 5px;
+  position: relative;
+}
+
+.row .columnP {
+  flex: 32%;
+  padding: 5px;
+  position: relative;
+}
+
+figcaption {
+  font-size:2.5em;
+  letter-spacing: 2px;
+  color: #2b0346;
+}
+
+.progDesc {
+  text-align: middle;
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: rgb(140,140,140);
+}
+
+.slideshow-container img {
+  width: 100%;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #57068c;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 70%;
+}
+
+iframe {
+	border-radius: 5%;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #57068c;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.preview {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #57068c;
+  border-radius: 10%;
+  width: calc(100% - (50px * 2));
+  margin: 10px 30px;
+}
+
+p {
+	text-align: center;
+}
+
+
+h1 {
+	color: #2b0346;
+}
+
+.slideshow-container {
+  max-width: 780px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 20px 30px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 30px}
+}
