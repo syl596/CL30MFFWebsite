@@ -1,6 +1,6 @@
 # Project: NYUAD Campus Center Explorer
 
-Website can be accessed [here](https://syl596.github.io/CL30MMFWebsite/).
+The project can be accessed [here](https://syl596.github.io/CL30MMFWebsite/).
 
 ## Project Description:
 
